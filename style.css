@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+:root{
+    --yellow:#f9ca24;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+::selection{
+    background:var(--yellow);
+    color: #333;
+
+}
+a{
+    color: #fff
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+html::-webkit-scrollbar-track{
+    background:#222;
+}
+html::-webkit-scrollbar-thumb{
+    background:var(--yellow);
+}
+body{
+    background: #111;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+header{
+    position:fixed;
+    top:0;left: 0;
+    z-index: 1000;
+    height:100%;
+    width:35rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid var(--yellow);
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: white;
+}
+header .user .post{
+    font-size: 2rem;
+    color: #eee;
+}
+header .navi{
+    width: 100%;
+}
+header .navi ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+header .navi ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+header .navi ul li a:hover{
+    background: var(--yellow);
+}
+.home{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: white;
+}
+.home h1{
+    font-size: 5rem;
+    color: white;
+}
+.home h1 span{
+    color: var(--yellow);
+}
+.home p{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+}
+.images img{
+  width:80px;
+  height:80px;
+  background-size:cover;
+  background-position:center;
+  background-color: white;
+  border-radius: 20%;
+  
+}
+.images:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.contact h3{
+    font-size: 2.5rem;
+    color: white;
+}
+.contact h1{
+    font-size: 5rem;
+    color: white;
+}
+.contact h1 span{
+    color: var(--yellow);
+}
+.contact p{
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 0;
+}
+.contactimg{
+    width:25px;
+    height:25px;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+ .contact image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .hover figure img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover figure:hover img {
+	opacity: .5;
+}
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: var(--yellow);
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+    border-radius: 5%;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+  
